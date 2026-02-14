@@ -3,7 +3,6 @@
     margin: 0;
     box-sizing: border-box;
 }
-
 :root {
     --white-text-color: #fff;
     --dark-text-color: #14120b;
@@ -16,36 +15,27 @@
     --white-light-text-color: #8b8b8b;
     --orange-text-color: #f54e00;
     --orange-hover-text-color: #f54e00bf;
-
-
 }
-
-
 body {
-    /* font-family: "League Spartan", sans-serif; */
-    font-family: "Didact Gothic", sans-serif;
-    /* font-optical-sizing: auto; */
+    font-family: "Inter", sans-serif;
     font-style: normal;
     background-color: var(--dark-bg-color);
     color: var(--white-text-color);
 }
-
 .navigation {
     background-color: var(--dark-bg-color);
     padding: 15px 108px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-
+    font-size: 14px;
 }
-
 .menubar a {
     text-decoration: none;
     color: var(--white-text-color);
     font-weight: 500;
     margin: auto 15px;
 }
-
 .top-cta-btn-sign-in {
     margin: auto 5px;
     border-radius: 100px;
@@ -56,13 +46,10 @@ body {
     border: 1.5px solid var(--border-color);
     text-decoration: none;
 }
-
 .top-cta-btn-sign-in:hover {
     background-color: var(--hover-light-dark-bg-color);
 }
-
 .top-cta-btn-download {
-
     margin: auto 5px;
     border-radius: 200px;
     padding: 2px 10px;
@@ -72,33 +59,25 @@ body {
     border: 1.5px solid var(--border-color);
     text-decoration: none;
 }
-
 .top-cta-btn-download:hover {
     background-color: var(--white-hover-light-bg-color);
 }
-
 /* ------------------- css for hero area ----------  */
-
 .hero-area {
-
     padding-left: 108px;
     padding-right: 108px;
     padding-top: 100px;
     padding-bottom: 68px;
     color: var(--white-text-color);
-
-
 }
-
 .hero-text h1 {
     line-height: 1.2;
     font-size: 28px;
+    font-weight: 400;
 }
-
 .hero-btn-box {
     margin-top: 40px;
 }
-
 .hero-btn-box a {
     color: var(--dark-text-color);
     background-color: var(--white-bg-color);
@@ -107,165 +86,122 @@ body {
     border-radius: 100px;
     font-size: 18px;
 }
-
 .hero-btn-box a:hover {
     background-color: var(--white-hover-light-bg-color);
 }
-
 .hero-img {
     margin-top: 60px;
 }
-
 .hero-img img {
     width: 100%;
 }
-
 /* ---------------- css for brand logo card ---------  */
 .brand-logos-box {
     padding-left: 108px;
     padding-right: 108px;
     text-align: center;
     color: var(--white-text-color);
-
 }
-
 .brand-logo-grid-box {
-
     display: grid;
     gap: 10px;
     grid-template-rows: 1fr;
     grid-template-columns: repeat(8, 1fr);
     margin-bottom: 50px;
 }
-
 .brand-logo {
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: var(--light-dark-bg-color);
     border-radius: 4px;
-
 }
-
 .brand-logo img {
     width: 100%;
     padding: 20px 40px;
 }
-
 .brand-logos-box>p {
     margin-bottom: 28px;
 }
-
 /* -------- css for feature card -----------  */
 .feature-card-box-txt-img {
     padding: 50px 108px;
-
 }
-
 .feature-card-box-img-txt {
     padding: 50px 108px;
-
 }
-
 .feature-card-txt-img {
     display: grid;
-
     grid-template-columns: 1fr 1.5fr;
-
     align-items: center;
     background-color: var(--light-dark-bg-color);
     padding: 12px 15px;
     color: var(--white-text-color);
     border-radius: 4px;
 }
-
 .feature-card-img-txt {
     display: grid;
-
     grid-template-columns: 1.5fr 1fr;
-
     align-items: center;
     background-color: var(--light-dark-bg-color);
     padding: 12px 15px;
     color: var(--white-text-color);
     border-radius: 4px;
 }
-
 .feature-card-txt-img .text-part {
     padding-right: 20px;
-
 }
-
 .feature-card-img-txt .text-part {
     padding-left: 20px;
-
 }
-
-
 .feature-card-txt-img .text-part p {
-
     font-size: 22px;
 }
-
 .feature-card-img-txt .text-part p {
-
     font-size: 22px;
 }
-
 .feature-card-txt-img .muted-text {
     color: var(--white-light-text-color);
 }
-
 .feature-card-img-txt .muted-text {
     color: var(--white-light-text-color);
 }
-
 .learn-more-btn {
     margin-top: 25px;
     display: inline-block;
 }
-
-
 .learn-more-btn {
     text-decoration: none;
     color: var(--orange-text-color);
-
 }
-
 .learn-more-btn:hover {
     text-decoration: none;
     color: var(--orange-hover-text-color);
 }
-
 .feature-card-txt-img .img-part img {
     width: 100%;
     border-radius: 3px;
 }
-
 .feature-card-img-txt .img-part img {
     width: 100%;
     border-radius: 3px;
 }
-
 /* ---------- css for review card ----  */
 .review-card-heading {
     text-align: center;
     margin: 45px 0px;
     font-size: 34px;
-
+    font-weight: 500;
 }
-
 .feature-review-card-box {
     padding: 50px 108px;
 }
-
 .review-card-grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     align-items: stretch;
     gap: 10px;
 }
-
 .review-card-grid .review-card-design {
     background-color: var(--light-dark-bg-color);
     padding: 12px 15px;
@@ -273,44 +209,33 @@ body {
     border-radius: 4px;
     border: 1px solid var(--hover-light-dark-bg-color)
 }
-
 .review-card-design {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
 }
-
 .review-credit-box {
     display: flex;
     padding-top: 60px;
-
 }
-
-
 .review-credit-box img {
     width: 40px;
     border-radius: 4px;
     margin-right: 10px;
 }
-
 .review-credit-box .name-box .designation {
     color: var(--white-light-text-color);
 }
-
 /* ------ css for key feature box ------  */
-
 .key-feature-box {
     padding: 50px 108px;
 }
-
 .key-feature-grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 10px;
     padding-top: 50px;
-
 }
-
 .key-feature-grid .key-feature-card {
     color: var(--white-text-color);
     border-radius: 4px;
@@ -318,54 +243,42 @@ body {
     background-color: var(--light-dark-bg-color);
     padding: 12px 15px;
 }
-
 .key-feature-card .text-box-link {
-
     color: var(--orange-text-color);
     text-decoration: none;
     padding-top: 20px;
     display: inline-block;
 }
-
 .key-feature-card .text-box-link:hover {
-
     color: var(--orange-hover-text-color);
-
 }
-
 .text-box .muted-text {
     color: var(--white-light-text-color);
 }
-
 .img-area img {
     width: 100%;
     margin-top: 20px;
     border-radius: 4px;
 }
-
 /* -----css for changelog design -----  */
 .changelog-card {
     padding: 50px 108px;
 }
-
 .changelog-card h2 {
     margin: 10px 0;
+    font-weight: 500;
 }
-
 .changelog-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 10px;
 }
-
-
 .changelog-display {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     margin: 10px 0;
 }
-
 .changelog-grid .changelog-display {
     color: var(--white-text-color);
     border-radius: 4px;
@@ -373,70 +286,53 @@ body {
     background-color: var(--light-dark-bg-color);
     padding: 12px 15px;
 }
-
 .changelog-grid .changelog-display:hover {
     background-color: var(--hover-light-dark-bg-color);
     cursor: pointer;
 }
-
-
 .changelog-display .date {
     color: var(--white-light-text-color);
     padding-bottom: 10px;
 }
-
 .changelog-grid a {
     text-decoration: none;
-
 }
-
 .changelog-display .date-with-verson {
-
     border-radius: 100px;
     border: 1px solid;
-
     margin-right: 10px;
     font-size: 14px;
     padding-left: 10px;
-    padding-right: 8px;
+    padding-right:5px;
 }
-
 .see-more-link {
     color: var(--orange-text-color);
     text-decoration: none;
     display: inline-block;
     margin: 10px 0;
 }
-
 .see-more-link:hover {
     color: var(--orange-hover-text-color);
 }
-
 .view-post-link {
     color: var(--orange-text-color);
     text-decoration: none;
     display: inline-block;
     margin: 10px 0;
 }
-
 .view-post-link:hover {
     color: var(--orange-hover-text-color);
-
 }
-
 /* ------------- css for post card ------------  */
-
 .post-card-section {
     background-color: var(--light-dark-bg-color);
     padding: 70px 108px;
     margin-top: 60px;
 }
-
 .post-card-grid {
     display: grid;
     grid-template-columns: 28% 1.5fr 28%;
 }
-
 .feature-post-card {
     display: flex;
     flex-direction: column;
@@ -448,28 +344,23 @@ body {
     text-decoration: none;
     color: var(--white-text-color);
 }
-
 .feature-post-card .text-area {
     margin-bottom: 20px;
 }
-
 .feature-post-card:hover {
     background-color: var(--hover-light-dark-bg-color);
 }
-
 .feature-post-card .text-area .desc {
     color: var(--white-light-text-color);
 }
-
 .download-cta-box {
     text-align: center;
     padding: 100px 108px;
 }
-
 .download-cta-box h2 {
     font-size: 70px;
+    font-weight: 500;
 }
-
 /* ----------- css for footer area --------  */
 .footer-box {
     background-color: var(--light-dark-bg-color);
@@ -477,31 +368,25 @@ body {
     margin-top: 60px;
     padding-bottom: 30px;
 }
-
 .footer-grid {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     align-items: baseline;
     font-size: 14px;
 }
-
 .footer-link-area {
     line-height: 1.8;
 }
-
 .footer-link-area .top {
     color: var(--white-light-text-color);
 }
-
 .footer-link-area .text-link {
     display: block;
     text-decoration: none;
     color: var(--white-text-color);
 }
-
 .copyright-box {
     font-size: 14px;
-
     padding-top: 80px;
     color: var(--white-light-text-color);
 }
